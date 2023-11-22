@@ -7,19 +7,34 @@ div.rninfo, div.weblockmsg {
 }
 
 nav.navbar {
-    background-color: transparent !important;
-    border-top: 1px solid rgba(211, 211, 211, 0.363);
-    border-bottom: 1px solid rgba(211, 211, 211, 0.363);
-    font-weight: bold;
+    /* background-color: #801c7c !important; */
+    background: rgb(196,54,120);
+background: linear-gradient(227deg, rgba(196,54,120,1) 0%, rgba(128,28,124,1) 59%);
+    /* font-weight: bold; */
+
     
     
+}
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+    color:white !important;
+}
+a.nav-link.dropdown-toggle {
+    color:#e3e3e3;
 }
 .navbar a:hover {
-    color:#0989ff !important;
+    color:white !important;
 
 }
+button.btn.btn-outline-primary {
+    border:2px solid #c53678 !important;
+    color:white !important;
+    background-color:#c53678 !important;
+}
+.search input {
+    border:2px solid #c53678 !important;
+}
 .header-icons a {
-    color:#010f1c
+    color:#4f0341;
 }
 .email-support a {
     color:#dddddd;
@@ -28,19 +43,25 @@ nav.navbar {
     color:#ffffff;
 }
 .header-icons a:hover {
-    color:#0989ff
+    color:#aa4c86 
 }
-#allcategories:hover, #exportorders:hover {
-
-    background-color:black !important;
-    color:white !important;
+#allcategories:hover  {
+    background-color:#771f74;
     transition-timing-function: ease-in-out;
+}
+#exportorders:hover {
+    background-color:#8e2568 !important;
+    transition-timing-function: ease-in-out;
+}
+#exportorders {
+    background-color:#aa4c86 !important;
+
 }
 #allcategories a:hover {
     color:white !important;
 }
 ul #allcategories {
-background-color: #0989ff;
+background-color: #801c7c;
 
 }
 #allcategories a{
@@ -52,7 +73,10 @@ background-color: #0989ff;
     color:black;
 }
 #rn-main-menu a:hover {
-    color:#0989ff !important;
+    color:#801c7c !important;
+}
+.dropdown-menu a:hover {
+    color:#801c7c !important;
 }
 @media (min-width:768px) {
     /* body {
@@ -62,7 +86,7 @@ background-color: #0989ff;
 @media(min-width:1024px) /* For desktops */ {
     #allcategories {
         /* width:200px; */
-        transform:scale(1.4);
+        transform:scale(1.36);
         position:relative;
         left:-13px;
     
