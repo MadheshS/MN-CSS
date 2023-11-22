@@ -78,6 +78,9 @@ background-color: #801c7c;
 .dropdown-menu a:hover {
     color:#801c7c !important;
 }
+ .dropdown-item:active {
+    background-color: transparent !important;
+}
 @media (min-width:768px) {
     /* body {
         background-color: yellowgreen !important;
@@ -113,9 +116,7 @@ background-color: #801c7c;
         left:400px;
         top:-55px;
     } */
-    body {
-        background-color: yellowgreen;
-    }
+   
        
 }
 
