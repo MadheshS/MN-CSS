@@ -1,0 +1,113 @@
+* {
+    font-family: 'Open Sans', sans-serif;
+}
+/* removing topmsg */
+div.rninfo, div.weblockmsg {
+    display:none !important;
+}
+
+nav.navbar {
+    background-color: transparent !important;
+    border-top: 1px solid rgba(211, 211, 211, 0.363);
+    border-bottom: 1px solid rgba(211, 211, 211, 0.363);
+    font-weight: bold;
+    
+    
+}
+.navbar a:hover {
+    color:#0989ff !important;
+
+}
+.header-icons a {
+    color:#010f1c
+}
+.email-support a {
+    color:#dddddd;
+}
+.email-support a:hover{
+    color:#ffffff;
+}
+.header-icons a:hover {
+    color:#0989ff
+}
+#allcategories:hover, #exportorders:hover {
+
+    background-color:black !important;
+    color:white !important;
+    transition-timing-function: ease-in-out;
+}
+#allcategories a:hover {
+    color:white !important;
+}
+ul #allcategories {
+background-color: #0989ff;
+
+}
+#allcategories a{
+    color:#f5f5f5;
+    font-weight: normal;
+    
+}
+#rn-main-menu a {
+    color:black;
+}
+#rn-main-menu a:hover {
+    color:#0989ff !important;
+}
+@media (min-width:768px) {
+    /* body {
+        background-color: yellowgreen !important;
+    } */
+}
+@media(min-width:1024px) /* For desktops */ {
+    #allcategories {
+        /* width:200px; */
+        transform:scale(1.4);
+        position:relative;
+        left:-13px;
+    
+       }
+    .container-header {
+        .search {
+        position:relative;
+        left:30px;
+        }
+    }
+    #allcategories a {
+        transform:scale(0.8);
+    }
+    /* .top-header {
+        height:30px;
+    } */
+    
+    /* .top-header .welcome-msg {
+        position:relative;
+        left:70px;
+    } */
+    /* div.search {
+        position:relative;
+        left:400px;
+        top:-55px;
+    } */
+    body {
+        background-color: yellowgreen;
+    }
+       
+}
+
+@media screen and (max-device-width: 480px) /* For mobile*/
+    and (orientation: portrait) {
+        .top-header .welcome-msg {
+            color:transparent !important;
+            font-size:15px;
+            /* white-space:nowrap; */
+            /* overflow:hidden; */
+            /* height:80px; */
+        
+        }
+        .rn-logo {
+            margin-bottom:10px !important;
+            position:relative;
+        }
+    }
+}
