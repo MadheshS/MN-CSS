@@ -8,8 +8,9 @@ div.rninfo, div.weblockmsg {
 
 nav.navbar {
     /* background-color: #801c7c !important; */
-    background: rgb(196,54,120);
-background: linear-gradient(227deg, rgba(196,54,120,1) 0%, rgba(128,28,124,1) 59%);
+    /* background: rgb(196,54,120);
+background: linear-gradient(227deg, rgba(196,54,120,1) 0%, rgba(128,28,124,1) 59%); */
+background-color: #4f3bc0 !important;
     /* font-weight: bold; */
 
     
@@ -25,13 +26,29 @@ a.nav-link.dropdown-toggle {
     color:white !important;
 
 }
+body {
+    background-color: #efefef !important;
+}
+.top-header {
+    background-color: #28182d !important;
+}
+.tooltip {
+    --bs-tooltip-bg: #4531bc !important;
+    margin-top:12px !important;
+}
+
+  
+#colhdg,.rollsort, .gobutton, .button1, .button2, .button3, .sendorder  {
+    /* background-color:#3f3044!important; */
+}
+
 button.btn.btn-outline-primary {
-    border:2px solid #c53678 !important;
+    border:2px solid #4531bc !important;
     color:white !important;
-    background-color:#c53678 !important;
+    background-color:#4531bc!important;
 }
 .search input {
-    border:2px solid #c53678 !important;
+    border:2px solid #4531bc !important;
 }
 .header-icons a {
     color:#4f0341;
@@ -43,26 +60,32 @@ button.btn.btn-outline-primary {
     color:#ffffff;
 }
 .header-icons a:hover {
-    color:#aa4c86 
+    color:#4531bc 
+}
+.header-icons {
+    transform:scale(0.9);
 }
 #allcategories:hover  {
-    background-color:#771f74;
+    background-color:#4531bc
     transition-timing-function: ease-in-out;
 }
 #exportorders:hover {
-    background-color:#8e2568 !important;
+    background-color:#6956d3 !important;
     transition-timing-function: ease-in-out;
 }
 #exportorders {
-    background-color:#aa4c86 !important;
+    background-color:#4330ad!important;
 
 }
 #allcategories a:hover {
     color:white !important;
 }
 ul #allcategories {
-background-color: #801c7c;
+background-color:transparent;
 
+}
+#query {
+    background-color: transparent !important;
 }
 #allcategories a{
     color:#f5f5f5;
@@ -73,10 +96,10 @@ background-color: #801c7c;
     color:black;
 }
 #rn-main-menu a:hover {
-    color:#801c7c !important;
+    color:#4531bc !important;
 }
 .dropdown-menu a:hover {
-    color:#801c7c !important;
+    color:#4531bc !important;
 }
  .dropdown-item:active {
     background-color: transparent !important;
@@ -131,8 +154,38 @@ background-color: #801c7c;
         
         }
         .rn-logo {
-            margin-bottom:10px !important;
+            
             position:relative;
+            transform:scale(0.8);
+            left:-15px;
+            
+            
+        }
+        div .search {
+            order:2;
+            padding:0 20px;
+                
+        }
+       
+        #search button {
+            margin-left:5px;
+        }
+        #search input {
+            margin-right:5px;
+           
+        }
+        
+        
+        .col.d-flex.mt-4.header-icons.justify-content-evenly {
+            display:flex;
+            padding-left:20px;
+           
+            justify-content: space-between !important;
+            position: relative;
+            left:-10px;
+            
+           align-items: center;
+
         }
     }
 }
