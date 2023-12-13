@@ -3,13 +3,41 @@
     font-weight: normal !important;
     font-size:15px;
 }
+
+/* Header styling */
+.container-header {
+    position:relative;
+    z-index:1;
+}
+
+.user-container  a.dropdown-item  {
+    font-size:19px;
+}
+/* Navbar styling */
+.navbar-nav .nav-item.dropdown.ms-3 ul.dropdown-menu {
+    border-radius:25px !important;
+}
+.sticky-top {
+    z-index:0;
+}
+/* styling for menu */
+nav.navbar {
+    background-color: white !important;
+    border-top:1px solid rgba(68, 68, 68, 0.13);
+    /* border-bottom: 1px solid rgba(68, 68, 68, 0.13); */
+    box-shadow: 0 4px 10px -1px rgba(0, 0, 0, 0.1);
+    /* padding : 0 0 0 0; */
+     
+}
+nav.navbar .dropdown-menu a:hover {
+    background-color: transparent;
+    color:#146678 !important;
+}
+
 table.ng-table b{
     color:white;
-    /* background-color: yellowgreen; */
-    /* font-size:large; */
 }
 body {
-    /* font-size:larger !important; */
     font-size:15px !important; 
 }
 #btn-info {
@@ -18,12 +46,7 @@ body {
 #btn-info h4 {
     margin: 0 0 0 0;
 }
-#collapseExample {
-    width:20% ;
-    position:relative;
-    left:1500px;
-    
-}
+
 /* Removing left content - test */
 .row.content #left > div, .row.content #left > ul {
     display:none;
@@ -35,23 +58,17 @@ body {
 div.rninfo, div.weblockmsg {
     display:none !important;
 }
-/* styling for menu */
-nav.navbar {
-    background-color: white !important;
-    /* border-top:1px solid rgba(68, 68, 68, 0.13); */
-    /* border-bottom: 1px solid rgba(68, 68, 68, 0.13); */
-    /* padding : 0 0 0 0; */
-     
-}
+
 .container-header{
-    border-bottom: 1px solid rgba(68, 68, 68, 0.13);
+    /* border-bottom: 1px solid rgba(68, 68, 68, 0.13); */
 }
 /* Menu heading styling */
 a.nav-link {
     color:#191919;
     font-size:larger;
 }
- a.nav-link:hover {
+
+.dropdown:hover > a {
     color:white;
     background-color:#146678;
 }
@@ -60,7 +77,13 @@ a.nav-link {
 }
    
 .top-header {
-    background-color: #101015 18, 27) !important;
+    background-color: rgb(238, 238, 238) !important;
+}
+.top-header a {
+    color:#252525 !important;
+}
+.top-header .email-support a:hover{
+    color:#146678 !important;
 }
 .tooltip {
     --bs-tooltip-bg: #146678 !important;
@@ -83,12 +106,8 @@ button.btn.btn-outline-primary {
 .header-icons a {
     color:#1e181d;
 }
-.email-support a {
-    color:#dddddd;
-}
-.email-support a:hover{
-    color:#ffffff;
-}
+
+
 .header-icons a:hover {
     color:#146678; 
 }
