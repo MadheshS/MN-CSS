@@ -1,18 +1,48 @@
 * {
-    font-family: 'Rubik', sans-serif !important;
-    font-weight: normal !important;
+    font-family: 'Rubik', sans-serif !important ;
+    font-weight: normal;
     font-size:15px;
 }
+a {
+    text-decoration: none;
+}
+#welcome-info span, .user-container a {
+    font-size:18px;
+    
 
+} {
+    font-size:17px;
+}
+.user-container .dropdown-menu {
+    width:450px;
+    
+}
+.user-container a.dropdown-item:hover {
+    color:#146678 !important;
+    --bs-dropdown-link-hover-bg:transparent;
+    
+}
+.user-container a.dropdown-item:hover span {
+    color:#1e181d ;
+    --bs-dropdown-link-hover-bg:transparent;
+    
+}
+.user-container #welcome-info {
+    height:100px;
+    --bs-dropdown-link-hover-bg:transparent;
+    /* border-bottom:1px solid rgba(62, 62, 62, 0.325); */
+}
+#welcome-info span i {
+   position:relative;
+   top:6px;
+}
 /* Header styling */
 .container-header {
     position:relative;
     z-index:1;
 }
 
-.user-container  a.dropdown-item  {
-    font-size:19px;
-}
+
 /* Navbar styling */
 .navbar-nav .nav-item.dropdown.ms-3 ul.dropdown-menu {
     border-radius:25px !important;
@@ -25,7 +55,7 @@ nav.navbar {
     background-color: white !important;
     border-top:1px solid rgba(68, 68, 68, 0.13);
     /* border-bottom: 1px solid rgba(68, 68, 68, 0.13); */
-    box-shadow: 0 4px 10px -1px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 5px 10px -1px rgba(0, 0, 0, 0.1);
     /* padding : 0 0 0 0; */
      
 }
@@ -112,8 +142,9 @@ button.btn.btn-outline-primary {
     color:#146678; 
 }
 .header-icons {
-    transform:scale(0.9);
+    transform:scale(0.98);
 }
+ul #allcategories a {font-size:15px;}
 #exportorders, ul #allcategories {background-color:#146678!important;}
 #exportorders:hover, #allcategories a.dropdown-toggle:hover {background-color:#258094 !important;}
 #search #query {background-color: #f0f2f5;}
@@ -138,12 +169,24 @@ button.btn.btn-outline-primary {
 /* Media queries for responsive design */
 
 @media(min-width:1024px) /* For desktops */ {
+    div #search {
+        
+        width:115%;
+
+    }
     
     #allcategories {
         position:relative;
         left:-13px;
         
        }
+    #allcategories ul.dropdown-menu.show {
+        /* width:155%; */
+        
+        /* display:flex; */
+        /* justify-content: flex-start; */
+        
+    }
     
     .container-header {
         .search {
@@ -171,6 +214,7 @@ button.btn.btn-outline-primary {
         visibility: hidden; 
         transition:0.3s; 
         margin-top:0;  
+        
     }
 	.navbar .nav-item.dropdown.ms-3 .dropdown-menu.fade-down{ 
         top:80%; 
