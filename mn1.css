@@ -1,18 +1,34 @@
+
+/* -- Global styling -- */
+
 * {
     font-family: 'Rubik', sans-serif !important ;
     font-weight: normal;
     font-size:15px;
 }
+
 a {
     text-decoration: none;
 }
+/* -- Body styling --  */
+body {
+    font-size:15px !important; 
+}
+/* body headings */
+#colhdg,.rollsort, .gobutton, .button1, .button2, .button3, .sendorder  {
+    background-color:#146678!important;
+}
+/* -- Header styling --  */
+
+.container-header {
+    position:relative;
+    z-index:1;
+}
+
 #welcome-info span, .user-container a {
     font-size:18px;
-    
-
-} {
-    font-size:17px;
 }
+
 .user-container .dropdown-menu {
     width:450px;
     
@@ -36,11 +52,43 @@ a {
    position:relative;
    top:6px;
 }
-/* Header styling */
-.container-header {
-    position:relative;
-    z-index:1;
+
+/* removing topmsg */
+div.rninfo, div.weblockmsg {
+    display:none !important;
 }
+
+.header-icons a:hover {
+    color:#146678; 
+}
+.header-icons {
+    transform:scale(0.98);
+}
+
+button.btn.btn-outline-primary {
+    border:2px solid #146678 !important;
+    color:white !important;
+    background-color:#146678!important;
+}
+.search input {
+    border:2px solid #146678 !important;
+}
+input#query {
+    height:55px;
+   
+}
+.header-icons a {
+    color:#1e181d;
+}
+
+
+
+
+
+
+
+
+
 
 
 /* Navbar styling */
@@ -67,9 +115,7 @@ nav.navbar .dropdown-menu a:hover {
 table.ng-table b{
     color:white;
 }
-body {
-    font-size:15px !important; 
-}
+
 #btn-info {
     display:flex;
 }
@@ -84,14 +130,8 @@ body {
 .ac_odd, .ac_results {
     background-color: rgb(254, 254, 254) !important;
 }
-/* removing topmsg */
-div.rninfo, div.weblockmsg {
-    display:none !important;
-}
 
-.container-header{
-    /* border-bottom: 1px solid rgba(68, 68, 68, 0.13); */
-}
+
 /* Menu heading styling */
 a.nav-link {
     color:#191919;
@@ -120,30 +160,12 @@ a.nav-link {
     margin-top:6px !important;
 }
 
-  /* body headings */
-#colhdg,.rollsort, .gobutton, .button1, .button2, .button3, .sendorder  {
-    background-color:#146678!important;
-}
-
-button.btn.btn-outline-primary {
-    border:2px solid #146678 !important;
-    color:white !important;
-    background-color:#146678!important;
-}
-.search input {
-    border:2px solid #146678 !important;
-}
-.header-icons a {
-    color:#1e181d;
-}
 
 
-.header-icons a:hover {
-    color:#146678; 
-}
-.header-icons {
-    transform:scale(0.98);
-}
+
+
+
+
 ul #allcategories a {font-size:15px;}
 #exportorders, ul #allcategories {background-color:#146678!important;}
 #exportorders:hover, #allcategories a.dropdown-toggle:hover {background-color:#258094 !important;}
@@ -171,7 +193,7 @@ ul #allcategories a {font-size:15px;}
 @media(min-width:1024px) /* For desktops */ {
     div #search {
         
-        width:115%;
+        width:95%;
 
     }
     
