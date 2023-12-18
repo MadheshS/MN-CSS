@@ -6,7 +6,13 @@
     font-weight: normal;
     font-size:15px;
 }
-
+.circle {
+    height: 75px;
+    width: 75px;
+    background-color: #146678;
+    border-radius: 50%;
+    display: inline-block;
+  }
 a {
     text-decoration: none;
 }
@@ -24,13 +30,19 @@ body {
     position:relative;
     z-index:1;
 }
+#welcome-info #user-text-info span {
+    font-size:16px;
 
+}
+#user-icon h1 {
+    color:white;
+}
 #welcome-info span, .user-container a {
     font-size:18px;
 }
 
 .user-container .dropdown-menu {
-    width:450px;
+    width:350px;
     
 }
 .user-container a.dropdown-item:hover {
@@ -44,9 +56,9 @@ body {
     
 }
 .user-container #welcome-info {
-    height:100px;
+    height:120px;
     --bs-dropdown-link-hover-bg:transparent;
-    /* border-bottom:1px solid rgba(62, 62, 62, 0.325); */
+    border-bottom:1.5px solid rgba(62, 62, 62, 0.159);
 }
 #welcome-info span i {
    position:relative;
