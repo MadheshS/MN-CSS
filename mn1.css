@@ -6,6 +6,14 @@
     font-weight: normal;
     font-size:15px;
 }
+#icon-name {
+ font-size:0;
+
+}
+#icon-name::first-letter {
+    font-size:35;
+    
+}
 .circle {
     height: 75px;
     width: 75px;
