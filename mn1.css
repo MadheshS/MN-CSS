@@ -32,6 +32,11 @@ body {
 #colhdg,.rollsort, .gobutton, .button1, .button2, .button3, .sendorder  {
     background-color:#146678!important;
 }
+/* Aligning body after removing left menu */
+div#center {
+    width: 80%;
+    margin-left: 44px;
+}
 /* -- Header styling --  */
 
 .container-header {
