@@ -3,6 +3,39 @@
     position:relative;
     top:2px;
 }
+/* datatable styles */
+#test-table th { 
+    background-color:#17525fa3;
+    color:#ffffff;
+    font-weight: normal !important;
+    /* font-weight: bold; */
+}
+#test-table th, #test-table td {
+    font-size:medium;
+}
+
+
+div#test-table_filter {
+    float:none;
+    position:relative;
+    /* right:200px; */
+    top:18px;
+    display:flex;
+    margin-left:800px;
+    
+}
+div#test-table_filter input {
+    width:100%;
+  
+}
+div#test-table_filter label {
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+
+}
 * {
     font-family: 'Rubik', sans-serif !important;
     font-weight: normal;
