@@ -3766,8 +3766,8 @@ h3.nosh span {
 #center {
     float: left;
     padding: 5px 0px 0px 5px;
-    overflow-y: hidden;
-    overflow-x: hidden;
+    /* overflow-y: hidden;
+    overflow-x: hidden; */
 }
 
 #header {
@@ -5780,8 +5780,8 @@ overflow-x: scroll;
     float: left;
     padding: 5px 0px 0px 5px;
     width: 66.66666667%;
-    overflow-y: hidden;
-    overflow-x: hidden;
+    /* overflow-y: hidden;
+    overflow-x: hidden; */
 }
 #SRAOButton {
     height: auto;
