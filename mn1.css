@@ -2,6 +2,10 @@
 body table.dataTable > tbody > tr.child ul.dtr-details > li {
     border-bottom:1px solid rgba(176, 176, 176, 0.619);
 }
+
+#table-functions {
+    width:50%;
+}
 #test-table {
     width:100% !important;
 }
@@ -33,7 +37,7 @@ body table.dataTable > tbody > tr.child ul.dtr-details > li {
 div#test-table_filter {
     float:none;
     position:relative;
-    
+    top:-35px;
     /* top:18px; */
     display:flex;
     margin-left:800px;
@@ -338,7 +342,19 @@ ul #allcategories {
 /* Media queries for responsive design */
 
 @media (min-width: 320px) and (max-width: 480px) { /*Smartphones Mobiles (Portrait) */
-   
+    #table-functions {
+        width:100%;
+        flex-direction: column;
+        /* justify-content: flex-start; */
+        align-items: flex-start;
+        white-space: nowrap;
+    } 
+    select[name="itemspage"] {
+       width:45px;
+    } 
+    select[name="statfilter"] {
+    width:130px;
+    }
  #test-table ul.dtr-details {
     display:flex;
     flex-direction: column;
@@ -409,6 +425,13 @@ ul #allcategories {
 }
 
 @media (min-width: 768px) and (max-width: 1024px) { /*  Tablets - iPad Mini, iPad Air */
+    
+    #table-functions {
+        width:100%;
+        /* justify-content: flex-start; */
+        align-items: flex-start;
+        white-space: nowrap;
+    } 
     #test-table ul.dtr-details {
         display:flex;
         flex-direction: column;
