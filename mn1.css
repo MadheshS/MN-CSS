@@ -1,9 +1,66 @@
 /* -- Global styling -- */
+body table.dataTable > tbody > tr.child ul.dtr-details > li {
+    border-bottom:1px solid rgba(176, 176, 176, 0.619);
+}
+#test-table {
+    width:100% !important;
+}
+#test-table td:last-child {
+    white-space:nowrap;
+}
+
+#mask {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
 #allcategories .bi-list {
     position:relative;
     top:2px;
 }
+/* datatable styles */
+#test-table th { 
+    background-color:#17525fa3;
+    color:#ffffff;
+    font-weight: normal !important;
+    /* font-weight: bold; */
+}
+#test-table th, #test-table td {
+    font-size:medium;
+}
 
+
+div#test-table_filter {
+    float:none;
+    position:relative;
+    
+    /* top:18px; */
+    display:flex;
+    margin-left:800px;
+    
+}
+div#test-table_filter input {
+    width:100%;
+  
+}
+div#test-table_filter label {
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+
+}
+* {
+    font-family: 'Rubik', sans-serif !important;
+    font-weight: normal;
+    font-size: 15px;
+}
+
+#icon-name {
+    font-size: 0;
+
+}
 
 div#footer a,
 div#footer font {
@@ -281,7 +338,29 @@ ul #allcategories {
 /* Media queries for responsive design */
 
 @media (min-width: 320px) and (max-width: 480px) { /*Smartphones Mobiles (Portrait) */
-
+   
+ #test-table ul.dtr-details {
+    display:flex;
+    flex-direction: column;
+ }
+  #test-table ul.dtr-details > li{
+    display:flex;
+    justify-content: space-between;   
+    
+ }
+ 
+ #test-table span {
+    white-space:nowrap;
+ }
+ .dtr-data {
+    /* background-color: yellowgreen; */
+    /* width:100px; */
+    width:37.5%;
+    text-align:justify;
+    /* width:75px; */
+    /* width:50%;
+     text-align:right; */
+ }
     input#query {
         z-index:0;
     }
@@ -330,11 +409,24 @@ ul #allcategories {
 }
 
 @media (min-width: 768px) and (max-width: 1024px) { /*  Tablets - iPad Mini, iPad Air */
+    #test-table ul.dtr-details {
+        display:flex;
+        flex-direction: column;
+     }
+      #test-table ul.dtr-details > li{
+        display:flex;
+        justify-content: space-between;   
+     }
     
+     #test-table span.dtr-data {
+        width:75%;
+     }
     html, body {
         overflow-x: hidden;
     }
-    
+    #test-table span {
+        white-space:nowrap;
+     }
     .header-icons>a>span {
         display: none !important;
         /* hiding icon names*/
@@ -374,22 +466,26 @@ ul #allcategories {
     }
     }
 @media (min-width:992px) {
+    /* iPad Pro */
     #allcategories{
-        
-        width:150px;
-        
+        width:150px;  
     }
-}   /* ipad Pro */
+    
+}    
 @media (min-width: 1025px) and (max-width: 1280px) {
+    
+  
+
     .header-icons>a>span {
         font-size:14px !important;
         
     }
+    
     .user-container .dropdown-menu {
         border:1px solid #21252930 !important;
         
       }
-  /* Laptops, Desktops b/w 1025px to 1280px */
+  /*  Laptops, Desktops b/w 1025px to 1280px */
   /* 1/12=8.33, 2/12=16.67, 3/12=25, 4/12=33.33, 5/12=41.67, 6/12=50 */
   /* 7/12=58.33, 8/12=66.67, 9/12=75, 10/12=83.33, 11/12=91.67, 12/12=100 */
   .rn-logo 
@@ -401,6 +497,7 @@ ul #allcategories {
     
     
   }
+  
   .search {
     width: 33.33%;
     margin-left:10px;
