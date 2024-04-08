@@ -342,7 +342,11 @@ ul #allcategories {
 /* Media queries for responsive design */
 
 @media (min-width: 320px) and (max-width: 480px) { /*Smartphones Mobiles (Portrait) */
-    #table-functions {
+#right_shortcuts, #right_order {
+	display:none;
+}
+	
+#table-functions {
         width:100%;
         flex-direction: column;
         /* justify-content: flex-start; */
