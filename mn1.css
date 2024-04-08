@@ -345,6 +345,10 @@ ul #allcategories {
 #right_shortcuts, #right_order {
 	display:none;
 }
+ #footer-functions {
+        width:351px;
+        justify-content: space-evenly;
+    }
 	
 #table-functions {
         width:100%;
