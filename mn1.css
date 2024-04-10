@@ -6,10 +6,43 @@ body table.dataTable > tbody > tr.child ul.dtr-details > li {
     background-color: 146678;
     color:white;
 }
-
-#table-functions {
-    width:50%;
+#footer-functions {
+    display:none !important;
 }
+#footer-functions > button {
+    background-color: #146678;
+    border:0;
+}
+#table-functions {
+width:100%;
+white-space: nowrap;
+justify-content: space-around;
+margin-bottom:10px;
+}
+#table-info .accordion-body {
+    text-align: justify;
+ }
+ input[name="RT"] {
+    padding:5px;
+    border-radius:5px;
+    font-weight: normal;
+    font-size:15px;
+ }
+
+ input[name="RT"]:hover {
+    color:white;
+ }
+ #table-info .accordion-button {
+    background-color: #3c8899 !important;
+    color:white;
+
+ }
+ #table-info .accordion-button::after {
+  
+        --bs-accordion-btn-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='white'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+        --bs-accordion-btn-active-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='white'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+    
+ }
 #test-table {
     width:100% !important;
 }
@@ -343,10 +376,12 @@ ul #allcategories {
 /* Media queries for responsive design */
 
 @media (min-width: 320px) and (max-width: 480px) { /*Smartphones Mobiles (Portrait) */
+
     #right_shortcuts, #right_order {
         display:none;
     }
     #footer-functions {
+        display:flex !important;
         width:351px;
         justify-content: space-evenly;
     }
@@ -354,8 +389,20 @@ ul #allcategories {
         background-color: #146678 !important;
         display: none !important;
        }
-    .items-per-page, .order-status-filter {
+    .sort-by, .items-per-page, .order-status-filter {
     width:100%;
+
+  }
+  #test-table_wrapper + table > tbody > tr {
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+  }
+  #table-functions > span {
+    margin-bottom:8px;
+  }
+  .sort-by > div , .items-per-page > div, .order-status-filter > div {
+    
   }
   .items-per-page > .input-group {
     width:100%;
