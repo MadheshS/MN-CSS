@@ -5557,7 +5557,7 @@ input#shistflag {
     -webkit-appearance: none;
     width: 25px;
     height: 25px;
-    background: white;
+    /* background: white; */
     border-radius: 5px;
     border: 1px solid #555;
     margin: 0px;
@@ -5565,7 +5565,7 @@ input#shistflag {
 }
 
 input#shistflag:checked {
-    background: #abd;
+    /* background: #abd; */
 }
 
 #search {
@@ -5699,14 +5699,14 @@ input#shistflag {
     -webkit-appearance: none;
     width: 25px;
     height: 25px;
-    background: white;
+    /* background: white; */
     border-radius: 5px;
     border: 1px solid #555;
     margin: 0px;
     margin-left: 5px;
 }
 input#shistflag:checked {
-    background: #abd;
+    /* background: #abd; */
 }
 #search {
     display: inline-table;
