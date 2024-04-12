@@ -2,6 +2,17 @@
 body table.dataTable > tbody > tr.child ul.dtr-details > li {
     /* border-bottom:1px solid rgba(176, 176, 176, 0.619); */
 }
+#test-table th:nth-child(2), #test-table th:nth-child(4), #test-table th:nth-child(5),
+#test-table th:nth-child(7), #test-table th:nth-child(9), #test-table th:nth-child(10) {
+    /* sortable columns have pointer cursor */
+   cursor: pointer;
+}
+
+#test-table th:nth-child(2):hover, #test-table th:nth-child(4):hover, #test-table th:nth-child(5):hover,
+#test-table th:nth-child(7):hover, #test-table th:nth-child(9):hover, #test-table th:nth-child(10):hover{
+    color:#e1faff
+}
+
 #table-functions .btn, #table-info .btn {
     background-color: 146678;
     color:white;
@@ -376,19 +387,26 @@ ul #allcategories {
 /* Media queries for responsive design */
 
 @media (min-width: 320px) and (max-width: 480px) { /*Smartphones Mobiles (Portrait) */
-
+    #test-table > tbody > tr > td{
+        background-color: rgb(255, 255, 255) !important;
+    }
     #right_shortcuts, #right_order {
         display:none;
+    }
+    #page-functions {
+        display:flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #page-functions > tbody > tr > td { 
+        padding:7px; 
     }
     #footer-functions {
         display:flex !important;
         width:351px;
         justify-content: space-evenly;
     }
-    .cust-info-form div{
-        background-color: #146678 !important;
-        display: none !important;
-       }
+    
     .sort-by, .items-per-page, .order-status-filter {
     width:100%;
 
@@ -401,9 +419,14 @@ ul #allcategories {
   #table-functions > span {
     margin-bottom:8px;
   }
-  .sort-by > div , .items-per-page > div, .order-status-filter > div {
-    
-  }
+  #test-table ul.dtr-details {
+    display:flex;
+    flex-direction: column;
+ }
+  #test-table ul.dtr-details > li{
+    display:flex;
+    justify-content: space-between;   
+ }
   .items-per-page > .input-group {
     width:100%;
     margin-left:27px;
@@ -411,12 +434,7 @@ ul #allcategories {
     #test-table {
    border: 1px solid rgba(54, 54, 54, 0.454);
    }
-    #test-table td {
-    padding-right:46px !important;
-   }
-   #test-table th {
-    /* white-space: wrap !important; */
-   }
+
    body#test-table { 
     background-color: #b3b1b1 !important;
     white-space: wrap !important;
@@ -432,31 +450,18 @@ ul #allcategories {
         z-index:1;
   
     }
-    /* #test-table tbody tr td:nth-child(2), #test-table thead th:nth-child(2) {
-        background-color: rgb(170, 180, 150);
-        position:sticky;
-        left:100px;
-        z-index:1;
-    }
-    #test-table thead th:first-child, #test-table thead th:nth-child(2) {
-        z-index:3;
-    } */
+  
     #test-table tbody tr td,#test-table thead th {
         border-right:1px solid rgba(128, 128, 128, 0.234);
     } 
     #table-functions {
         width:100%;
         flex-direction: column;
-        /* justify-content: flex-start; */
+
         align-items: flex-start;
         white-space: nowrap;
     } 
-    /* select[name="itemspage"] {
-       width:45px;
-    } 
-    select[name="statfilter"] {
-    width:130px;
-    } */
+   
  
  
  
@@ -475,14 +480,19 @@ ul #allcategories {
         display: none !important; /* hiding icon names*/
     }
     .top-header .welcome-msg {
-        display:none !important;
+        /* display:none !important; */
         font-size:15px;
     }
     .top-header  {
-        height:50px;
+        height:70px;
         display:flex;
         justify-content: center;
     
+    }
+    .top-header .email-support {
+        /* width:300px !important; */
+        white-space: nowrap;
+        /* border:2px solid red; */
     }
     #allcategories{
         margin-bottom:10px;
@@ -498,7 +508,7 @@ ul #allcategories {
         display: none !important;
         /* hiding icon names*/
     }
-
+    
     .header-icons {
         order: 1 !important;
     }
@@ -513,22 +523,68 @@ ul #allcategories {
 }
 
 @media (min-width: 768px) and (max-width: 1024px) { /*  Tablets - iPad Mini, iPad Air */
+    #test-table {
+        border: 1px solid rgba(54, 54, 54, 0.454);
+        margin-top:10px;
+        }
+    #page-functions {
+      
+            display:flex;
+            justify-content: end;
+            position:relative;
+            bottom:60px;
+            align-items: center;
+        }
+    #page-functions > tbody > tr > td {
+             padding:10px;     
+        }
+    #test-table ul.dtr-details {
+            display:flex;
+            flex-direction: column;
+         }
+    #test-table ul.dtr-details > li{
+            display:flex;
+            justify-content: space-evenly;   
+         }
+    #right_shortcuts, #right_order {
+        display:none;
+    }
+    #table-info {
+       margin-top:30px;
+    }
+    #table-functions {
+        margin-top:10px !important;   
+    }
+    
+    #footer-functions {
+        display:flex !important;
+        width:714px !important;
+        justify-content: space-evenly;
+    }
     div#center {
-        width:80%;
-        margin-left:30px;
+        width:93%;
+        margin-left:25px;
        }
     
     div#right {
         
-        max-width:100px !important;
-        width:100px !important;
-        min-width:100px !important;
+        max-width:714px !important;
+        width:714px !important;
+        min-width:714px !important;
+        margin-left:25px;
     }
     div#right > div, div#right >div>div, div#right > div >div, div#right > div >div > * {
         width:100% !important;
         min-width:100% !important;
         max-width:100% !important;
 
+    }
+    #table-functions .items-per-page {
+        width:177px !important;
+    }
+    #table-functions > span {
+        margin-right:5px;
+    
     }
     #table-functions {
         width:100%;
@@ -648,6 +704,19 @@ ul #allcategories {
   }
 
   @media(min-width:1024px) /* For desktops */ {
+    #page-functions {
+      
+        display:flex;
+        justify-content: end;
+        position:relative;
+        bottom:60px;
+        align-items: center;
+    }
+    #page-functions > tbody > tr > td {
+        
+        padding:15px; 
+        
+    }
     div#center {
         width: 80%;
         margin-left: 44px;
