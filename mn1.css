@@ -480,20 +480,16 @@ ul #allcategories {
         display: none !important; /* hiding icon names*/
     }
     .top-header .welcome-msg {
-        /* display:none !important; */
+        display:none !important;
         font-size:15px;
     }
     .top-header  {
-        height:70px;
+        height:50px;
         display:flex;
         justify-content: center;
     
     }
-    .top-header .email-support {
-        /* width:300px !important; */
-        white-space: nowrap;
-        /* border:2px solid red; */
-    }
+    
     #allcategories{
         margin-bottom:10px;
     }
