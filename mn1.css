@@ -1,4 +1,11 @@
 /* -- Global styling -- */
+.modal-content {
+    width: 800px;
+}
+.modal-dialog {
+	display: flex;
+	justify-content: center;
+}
 input[name="ordervar"] {
     border: 2px solid rgba(49, 49, 49, 0.138);
 }    
