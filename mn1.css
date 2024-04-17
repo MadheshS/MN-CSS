@@ -1,7 +1,5 @@
 /* -- Global styling -- */
-body table.dataTable > tbody > tr.child ul.dtr-details > li {
-    /* border-bottom:1px solid rgba(176, 176, 176, 0.619); */
-}
+
 #coo-table th:nth-child(2), #coo-table th:nth-child(4), #coo-table th:nth-child(5),
 #coo-table th:nth-child(7), #coo-table th:nth-child(9), #coo-table th:nth-child(10) {
     /* sortable columns have pointer cursor */
@@ -559,7 +557,7 @@ ul #allcategories {
     width:100vw;
     padding:0 20px;
    }
-   #coo-table-container {
+   #coo-table_wrapper {
     overflow-x: scroll;
    }
    #right_specials, #right_shortcuts, #right_order {
@@ -619,7 +617,7 @@ ul #allcategories {
 
 /*  Tablets - iPad Mini, iPad Air */
 @media (min-width: 768px) and (max-width: 1023px) { 
-    #coo-table-container {
+    #coo-table_wrapper {
         overflow-x:scroll;
         /* width:100%; */
     
@@ -762,7 +760,7 @@ ul #allcategories {
 
 
 /*  Tablets - iPad Pro */
-@media (min-width: 1024px) and (max-width: 1280px) {
+@media (min-width: 1024px) and (max-width: 1279px) {
     div#center {
         display:flex;
         width:100vw;
@@ -777,7 +775,7 @@ ul #allcategories {
     overflow-x:hidden;
    }
        
-    #coo-table-container {
+    #coo-table_wrapper {
         overflow-x:scroll;
 
     
@@ -821,11 +819,61 @@ ul #allcategories {
   }  
   }
 
-  @media(min-width:1281px) /* For desktops */ {
+/* Laptops between 1280px and 1440px */
+@media (min-width: 1280px) and (max-width: 1440px) {
+    
+    div#center {
+        width:80% !important;
+        margin-left:25px;
+    }
     html,body {
         overflow-x: hidden;
     }
+    #coo-table_wrapper {
+        overflow-x:hidden;
+        width:100%;
+    }
+    #coo-table tbody tr td, #coo-table thead th {
+    font-size:small;
+    padding:4px;
+    /* font-size:1rem; */
+        }
+        #coo-table tbody tr td:first-child, #coo-table thead th:first-child {
+            padding:0 0 0 1px !important;
+        }    
+    /* dropdown transition */
+    .navbar .nav-item.dropdown.ms-3 .dropdown-menu{  
+        display:block; 
+        opacity: 0;  
+        visibility: hidden; 
+        transition:0.3s; 
+        margin-top:0;  
+        
+    }
+	.navbar .nav-item.dropdown.ms-3 .dropdown-menu.fade-down{ 
+        top:80%; 
+        transform: rotateX(-75deg); 
+        transform-origin: 0% 0%; 
+    }
+	.navbar .nav-item.dropdown.ms-3 .dropdown-menu.fade-up{ 
+        top:180%;  
+    }
+	.navbar .nav-item.dropdown.ms-3:hover .dropdown-menu{ 
+        transition: 0.7s; 
+        opacity:1; 
+        visibility:visible; 
+        top:100%; 
+        transform: rotateX(0deg); 
+    }
+    
+
+}  
+  @media(min-width:1441px) /* For desktops */ {
    
+    html,body {
+        overflow-x: hidden;
+    }
+    
     #page-functions {
       
         display:flex;
@@ -839,18 +887,16 @@ ul #allcategories {
         padding:15px; 
         
     }
-    div#center {
-        width: 80%;
-        margin-left: 44px;
+    #center {
+     width:80%;   
+     margin-left:20px;
     }
-    
+
+   
     .top-header .row {
         height:35px;
     }
-    .container-header .header-icons {
-        /* margin-left:30px;
-        gap:20px; */
-    }
+    
     
     /* dropdown transition */
     .navbar .nav-item.dropdown.ms-3 .dropdown-menu{  
@@ -877,84 +923,34 @@ ul #allcategories {
         transform: rotateX(0deg); 
     }
     
+    #footer-functions {
+        display:none !important;
+       }
+       #right_shortcuts, #right_specials, #right_order {
+        display:block !important;
+    }
+    
+    
+    #coo-table_wrapper {
+        overflow-x: hidden;
+    }
+    #page-functions {
+          
+        display:flex;
+        justify-content: end;
+        position:relative;
+        bottom:60px;
+        align-items: center;
+    } 
+    
+  
     
     
 }
   
 
-@media(min-width:1281px) {
-   #footer-functions {
-    display:none !important;
-   }
-   #right_shortcuts, #right_specials, #right_order {
-    display:block !important;
-}
-#center {
-    max-width:82.2% !important;
-}
-#coo-table tbody tr td:last-child {
-    /* white-space: wrap; */
-
-    
-}
-
-#coo-table-container {
-    overflow-x: hidden;
-}
-#page-functions {
-      
-    display:flex;
-    justify-content: end;
-    position:relative;
-    bottom:60px;
-    align-items: center;
-} 
-/* dropdown transition */
-.navbar .nav-item.dropdown.ms-3 .dropdown-menu{  
-    display:block; 
-    opacity: 0;  
-    visibility: hidden; 
-    transition:0.3s; 
-    margin-top:0;  
-    
-}
-.navbar .nav-item.dropdown.ms-3 .dropdown-menu.fade-down{ 
-    top:80%; 
-    transform: rotateX(-75deg); 
-    transform-origin: 0% 0%; 
-}
-.navbar .nav-item.dropdown.ms-3 .dropdown-menu.fade-up{ 
-    top:180%;  
-}
-.navbar .nav-item.dropdown.ms-3:hover .dropdown-menu{ 
-    transition: 0.7s; 
-    opacity:1; 
-    visibility:visible; 
-    top:100%; 
-    transform: rotateX(0deg); 
-}
-#coo-table tbody tr td, #coo-table thead th {
-    
-padding:7px;
-}
-
-/* div#right {
-        
-    max-width:15% !important;
-    width:15% !important;
-    min-width:15% !important;
-    
-    margin-left:35px;
-}
-div#right > div, div#right >div>div, div#right > div >div, div#right > div >div > * {
-    width:100% !important;
-    min-width:100% !important;
-    max-width:100% !important;
-
-} */
-}
 /* misc media queries */
-@media(min-width:1281px) and (max-width:1362px) {
+@media(min-width:1280px) and (max-width:1362px) {
     .search {
         width: 33.33%;
     }
@@ -974,7 +970,7 @@ div#right > div, div#right >div>div, div#right > div >div, div#right > div >div 
         white-space: nowrap;
     }
 }  */
-@media(min-width:1281px) and (max-width:1436px) {
+@media(min-width:1280px) and (max-width:1436px) {
     
     .header-icons > a > span {
         font-size:14px !important;
@@ -992,7 +988,7 @@ div#right > div, div#right >div>div, div#right > div >div, div#right > div >div 
     }
 }
 
-@media (min-width: 1281px) {
+@media (min-width: 1280px) {
     .allcategories {
       
       width:200px;
@@ -1019,14 +1015,16 @@ div#right > div, div#right >div>div, div#right > div >div, div#right > div >div 
     
 }  
 
-@media(min-width:1281px) and (max-width:1329px) {
+/* @media(min-width:1280px) and (max-width:1329px) {
     #center {
         width:79% !important;
     }
-}
+} */
 /* hiding shortctus, specials, order */
-@media(max-width:1281px) {
-    #right_shortcuts, #right_specials, #right_order {
+@media(max-width:1279px) {
+    #right_shortcuts, #right_specials, #right_order,
+    .slsheader, .CutoffMsg, #defaultCountdown, #RebateTracker {
         display:none;
     }
 }
+
