@@ -1,5 +1,11 @@
 /* -- Global styling -- */
-
+input[name="ordervar"] {
+    border: 2px solid rgba(49, 49, 49, 0.138);
+}    
+.auto-submit-order {
+    display:none !important;
+    white-space: nowrap;
+}
 #coo-table th:nth-child(2), #coo-table th:nth-child(4), #coo-table th:nth-child(5),
 #coo-table th:nth-child(7), #coo-table th:nth-child(9), #coo-table th:nth-child(10) {
     /* sortable columns have pointer cursor */
@@ -821,6 +827,9 @@ ul #allcategories {
 
 /* Laptops between 1280px and 1440px */
 @media (min-width: 1280px) and (max-width: 1440px) {
+    #coo-table-info > div > div > div >span > div {
+        width:65%;
+        }
     
     div#cust-info-form > .row > label{
         /* width:140%; */
@@ -879,16 +888,10 @@ ul #allcategories {
 
 }  
   @media(min-width:1441px) /* For desktops */ {
-    div#cust-info-form > .row > label{
-        /* width:140%; */
-        /* width:50% !important; */
-        
-    }
-    div#cust-info-form > .row > div{
-     /* width:50%;    */
-     /* width:50% !important; */
-     /* width:200px !important; */
-    }
+   #coo-table-info > div > div > div >span > div {
+   width:65%;
+   }
+    
     html,body {
         overflow-x: hidden;
     }
@@ -1053,4 +1056,9 @@ ul #allcategories {
         
         
     }
+}
+@media(min-width:1280px) {
+.auto-submit-order {
+    display:flex !important;
+}
 }
