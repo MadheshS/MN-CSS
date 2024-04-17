@@ -822,6 +822,16 @@ ul #allcategories {
 /* Laptops between 1280px and 1440px */
 @media (min-width: 1280px) and (max-width: 1440px) {
     
+    div#cust-info-form > .row > label{
+        /* width:140%; */
+        width:16.67%;
+        
+    }
+    div#cust-info-form > .row > div{
+     /* width:50%;    */
+     width:33.33%;
+     /* width:200px !important; */
+    }
     div#center {
         width:80% !important;
         margin-left:25px;
@@ -869,7 +879,16 @@ ul #allcategories {
 
 }  
   @media(min-width:1441px) /* For desktops */ {
-   
+    div#cust-info-form > .row > label{
+        /* width:140%; */
+        /* width:50% !important; */
+        
+    }
+    div#cust-info-form > .row > div{
+     /* width:50%;    */
+     /* width:50% !important; */
+     /* width:200px !important; */
+    }
     html,body {
         overflow-x: hidden;
     }
@@ -1027,4 +1046,11 @@ ul #allcategories {
         display:none;
     }
 }
-
+/* adding row gap for all devices upto 768px */
+@media(min-width:768px) {
+    div#cust-info-form > .row {
+      row-gap: 20px;
+        
+        
+    }
+}
