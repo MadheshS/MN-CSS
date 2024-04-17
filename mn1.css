@@ -1,6 +1,6 @@
 /* -- Global styling -- */
 .modal-content {
-    width: 800px;
+    min-width: 800px;
 }
 .modal-dialog {
 	display: flex;
@@ -442,6 +442,9 @@ ul #allcategories {
 
 /* Smartphones Mobiles (Portrait) */
 @media (min-width: 320px) and (max-width: 480px) { 
+	.modal-content {
+    min-width: 350px !important;
+}
     #coo-table > tbody > tr > td{
         background-color: rgb(255, 255, 255) !important;
     }
