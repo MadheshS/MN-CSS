@@ -1,8 +1,5 @@
 /* -- Global styling -- */
-div#coo-table-info {
-    z-index: -1;
-    position: relative;
-}
+
 .modal-content {
     min-width: 800px;
 }
@@ -410,6 +407,9 @@ ul #allcategories {
 
 /* Very small mobile devices*/
 @media (max-width: 319px) { 
+    .modal-content {
+        min-width: 200px !important;
+    }
     .header-icons>a>span {
         display: none !important;
         /* hiding icon names*/
@@ -424,6 +424,17 @@ ul #allcategories {
         justify-content: center;
    
     
+    }
+    #coo-table_wrapper + table > tbody > tr {
+        display:flex;
+        flex-direction: column;
+        align-items:center;
+        /* width:70vw; */
+        justify-content: center;
+        padding:0;
+    }
+    #page-functions {
+        
     }
 
     ul.dropdown-menu.show {
@@ -442,7 +453,43 @@ ul #allcategories {
      input#query {
         z-index:0;
     }
+    #pagination-table {
+        /* width:100vw; */
+    }
+  
+   
+    div#center {
+        display:flex;
+        
+        width:100vw;
+        padding:10px;
+        margin-left:10px !important;
+        margin-left:auto;
+    }
+    #footer-functions {
+        display:flex !important;
+        width:100vw;
+        justify-content: space-evenly;
+    }
+    div#center > * {
+        width:100%;
+    }
+    #coo-table-functions {
+        width:100%;
+        flex-direction: column;
+
+        align-items: flex-start;
+        white-space: nowrap;
+    } 
+    .sort-by, .items-per-page, .order-status-filter {
+        width:100%;
+    
+        }
+        #page-functions > tbody > tr > td { 
+            /* padding:7px;  */
+        }
 }
+
 
 /* Smartphones Mobiles (Portrait) */
 @media (min-width: 320px) and (max-width: 480px) { 
@@ -472,6 +519,7 @@ ul #allcategories {
         display:flex !important;
         width:100vw;
         justify-content: space-evenly;
+	margin-top:20px;
     }
     
     .sort-by, .items-per-page, .order-status-filter {
@@ -1081,4 +1129,11 @@ ul #allcategories {
 .auto-submit-order {
     display:flex !important;
 }
+}
+/* max width 375px - pagination fix */
+@media(max-width:375px) {
+    #page-functions > tbody tr > td  {
+        display:inline-block !important;
+      
+       }
 }
