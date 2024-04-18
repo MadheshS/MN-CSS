@@ -1,5 +1,11 @@
 /* -- Global styling -- */
-
+.container-header {
+    position: relative;
+    z-index: 3;
+}
+nav.navbar.sticky-top {
+z-index:1;
+}
 .modal-content {
     min-width: 800px;
 }
