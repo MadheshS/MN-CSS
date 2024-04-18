@@ -844,6 +844,19 @@ ul #allcategories {
     #coo-table-info > div > div > div >span > div {
         width:65%;
         }
+	 #page-functions {
+      
+        display:flex;
+        justify-content: end;
+        position:relative;
+        bottom:60px;
+        align-items: center;
+    }
+    #page-functions > tbody > tr > td {
+        
+        padding:15px; 
+        
+    }
     
     div#cust-info-form > .row > label{
         /* width:140%; */
@@ -910,19 +923,8 @@ ul #allcategories {
         overflow-x: hidden;
     }
     
-    #page-functions {
-      
-        display:flex;
-        justify-content: end;
-        position:relative;
-        bottom:60px;
-        align-items: center;
-    }
-    #page-functions > tbody > tr > td {
-        
-        padding:15px; 
-        
-    }
+  
+   
     #center {
      width:80%;   
      margin-left:20px;
@@ -975,11 +977,15 @@ ul #allcategories {
         display:flex;
         justify-content: end;
         position:relative;
-        bottom:60px;
+        bottom:50px;
         align-items: center;
     } 
     
-  
+   #page-functions > tbody > tr > td {
+        
+        padding:15px; 
+        
+    }
     
     
 }
