@@ -3,6 +3,9 @@
     position: relative;
     z-index: 3;
 }
+.dtr-data > .Salesinfo {
+	display:block;
+}
 nav.navbar.sticky-top {
 z-index:1;
 }
