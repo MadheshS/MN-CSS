@@ -713,7 +713,7 @@ ul #allcategories {
             display:flex;
             justify-content: end;
             position:relative;
-            bottom:30px;
+            bottom:10px;
             align-items: center;
         }
     #page-functions > tbody > tr > td {
