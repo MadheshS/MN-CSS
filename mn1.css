@@ -416,6 +416,9 @@ ul #allcategories {
 
 /* Very small mobile devices*/
 @media (max-width: 319px) { 
+    #table-pagination .page-item {
+        flex: 0 0 20%;
+    }
     .modal-content {
         min-width: 200px !important;
     }
@@ -502,6 +505,9 @@ ul #allcategories {
 
 /* Smartphones Mobiles (Portrait) */
 @media (min-width: 320px) and (max-width: 480px) { 
+  #table-pagination .page-item {
+        flex: 0 0 20%;
+    }
 	.modal-content {
     min-width: 350px !important;
 }
