@@ -1127,7 +1127,7 @@ ul #allcategories {
     }
    #table-pagination {
 	   flex-wrap:wrap;
-	   justify-content:end;
+	   justify-content:start !important;
    }
    #table-pagination .page-item {
 	   flex:0 0 10%;
