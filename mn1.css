@@ -5,6 +5,7 @@
 }
 .dtr-data > .Salesinfo {
 	display:block;
+	min-width:150px !important;
 }
 nav.navbar.sticky-top {
 z-index:1;
@@ -556,6 +557,7 @@ ul #allcategories {
   #coo-table ul.dtr-details > li{
     display:flex;
     justify-content: space-between;   
+   flex-wrap:wrap;
  }
   .items-per-page > .input-group {
     width:100%;
