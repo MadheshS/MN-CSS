@@ -86,7 +86,7 @@ margin-bottom:10px;
     width:100% !important;
 }
 #coo-table td:last-child {
-    white-space:nowrap;
+/*     white-space:nowrap; */
 }
 
 #mask {
