@@ -1119,12 +1119,18 @@ ul #allcategories {
         width:79% !important;
     }
 } */
-/* hiding shortctus, specials, order */
+/* hiding shortctus, specials, order & pagination layout change */
 @media(max-width:1279px) {
     #right_shortcuts, #right_specials, #right_order,
     .slsheader, .CutoffMsg, #defaultCountdown, #RebateTracker {
         display:none;
     }
+   #table-pagination {
+	   flex-wrap:wrap;
+   }
+   #table-pagination .page-item {
+	   flex:0 0 10%;
+   }
 }
 /* adding row gap for all devices upto 768px */
 @media(min-width:768px) {
